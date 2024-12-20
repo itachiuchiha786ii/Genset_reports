@@ -1,0 +1,89 @@
+/* ... previous styles ... */
+
+#menu-toggle{
+  display: block; /* Make the toggle visible */
+  cursor: pointer;
+  font-size: 26px; /* Adjust icon size */
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+#main-nav {
+    display: none; /*Initially hide the nav*/
+}
+
+#menu-toggle:hover, #main-nav a:hover{
+    background-color: #111;
+}
+
+#main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+#main-nav li {
+  display: block; /* Stack items vertically */
+}
+
+#main-nav li a {
+  display: block; /* Ensure full-width links */
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+
+
+/* Style for larger screens (optional): */
+@media (min-width: 768px) {
+  #menu-toggle {
+    display: none; /* Hide toggle on larger screens */
+  }
+  #main-nav {
+    display: block; /* Show nav normally */
+    background-color: #333;
+  }
+  #main-nav ul {
+    display: flex; /* Make horizontal on larger screens */
+  }
+  #main-nav li {
+    display: inline-block; /* Horizontal display */
+  }
+}
+
+
+/* ... Previous styles ... */
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  position: relative; /* For absolute positioning of images */
+}
+
+#market { background-color: #f2f2f2; }
+#genset { background-color: #e0e0e0; }
+#smart { background-color: #d0d0d0; }
+#improvement { background-color: #c0c0c0; }
+#facility { background-color: #b0b0b0; }
+
+.image-slideshow {
+  width: 100%;
+  overflow: hidden; /* Hide overflowing images */
+}
+
+.image-slideshow img {
+  width: 100%;
+  height: auto;
+  display: none; /* Initially hide all images */
+}
+
+.image-slideshow img:first-child {
+  display: block; /* Show the first image */
+}
+
+.image-slideshow img.active{
+    display:block;
+}
